@@ -29,19 +29,19 @@
     		Data inválida. Use o formato AAAA-MM-DD.
     	</div>
 	</div>
-		
+
 	<div class="container-aula-edit" id="msg-horario" hidden="hidden">
    		<div class="texto">
             Horário inválido. Use o formato HH:MM.
         </div>
 	</div>
-		
+
 	<div class="container-aula-edit" id="msg-duracao" hidden="hidden">
     	<div class="texto">
             Duração inválida. Deve ser um número positivo.
         </div>
 	</div>
-    
+
     <div class="container-aula-edit">
         <div class="container-linha1">
             <div class="info">Data: <input id="data-id" type="date" class="inp-data"></div>

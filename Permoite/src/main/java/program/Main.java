@@ -15,7 +15,6 @@ public class Main {
 			System.out.println(dto.toString());
 		}
 
-		// Modificando registro de id = 1
 		AulaDto aula = db.findById("1");
 		aula.assunto = "Integral";
 		db.update(aula);

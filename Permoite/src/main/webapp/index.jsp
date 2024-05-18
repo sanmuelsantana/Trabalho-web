@@ -18,6 +18,7 @@
 		<div class="btn-nav" onclick="reset()">RESET</div>
 	</nav>
 	<div class="container-geral">
+
 		<%
 		HttpSession sessao = request.getSession();
 		// Aqui você vai precisar recuperar dados na sessão.
@@ -38,7 +39,7 @@
 		                <div class="info">Duração(h): <span class="texto"><%= a.duracao %></span></div>
 		            </div>
 		            <div class="container-linha2">
-		                <div class="info">Disciplina: <span class="texto"><%= a.disciplina %></span></div>
+		            	<div class="info">Disciplina: <span class="texto"><%= enums.DisciplinaEnum.getDiscByCodigo(Integer.parseInt(a.codDisciplina)).getNome() %></span></div>
 		                <div class="info">Assunto: <span class="texto"><%= a.assunto %></span></div>
 		            </div>
 		            <div class="container-btns">
@@ -51,7 +52,7 @@
 			}
 		}
 		%>
-		
+
 		<script src="script.js"></script>
 	</div>
 </body>

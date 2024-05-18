@@ -24,7 +24,7 @@ public class AulaDto {
 		this.data = this.formataData(aula.getData());
 		this.horario = aula.getHorario();
 	}
-
+	
 	private String geraNomeDisc(int cod) {
 		return DisciplinaEnum.getDiscByCodigo(cod).getNome();
 	}

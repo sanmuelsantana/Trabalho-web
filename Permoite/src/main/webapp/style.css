@@ -4,34 +4,39 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(173, 172, 172);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-cabecalho {
     text-align: center;
     padding: 20px;
-    background-color: lightgray;
+    background-color: white;
+    border: 2px solid #27ae60; /* Adiciona borda ao cabeçalho */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao cabeçalho */
 }
 
 .container-cabecalho h3 {
     font-weight: 600;
     font-size: 3em;
-    color: steelblue;
-    text-shadow: 2px 2px black;
+    color: #27ae60;
+    text-shadow: 2px 2px #033a1a;
 }
 
 .container-nav {
     text-align: center;
     padding: 10px;
-    background-color: steelblue;
+    background-color: #27ae60;
     box-shadow: 0 5px 10px 0px rgb(87, 84, 105);
     display: flex;
     justify-content: center;
+    border: 2px solid #033a1a; /* Adiciona borda ao contêiner de navegação */
+    border-radius: 10px;
 }
 
 .btn-nav {
-    background-color: rgb(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.15);
     width: fit-content;
     margin-left: 5px;
     margin-right: 5px;
@@ -41,11 +46,12 @@ body {
     border-radius: 15px;
     text-decoration: none;
     color: rgb(33, 29, 61);
-    box-shadow: 2px 2px 3px 1px rgb(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgb(33, 29, 61); /* Adiciona borda aos botões de navegação */
 }
 
 .btn-nav:hover {
-    background-color: rgb(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-nav:active {
@@ -53,7 +59,7 @@ body {
     padding-top: 12px;
     padding-bottom: 8px;
     padding-right: 8px;
-    box-shadow: 1px 1px 2px 1px rgb(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.6);
 }
 
 .container-geral {
@@ -61,7 +67,7 @@ body {
 }
 
 .container-aula {
-    color:rgb(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     margin: auto;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -75,7 +81,7 @@ body {
 }
 
 .container-aula-edit {
-    color:rgb(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
     margin: auto;
     margin-top: 45px;
     margin-bottom: 5px;
@@ -110,9 +116,8 @@ body {
 }
 
 .btn {
-    background-color: rgb(0, 0, 0, 0.4);
     width: fit-content;
-    margin-top: 10PX;
+    margin-top: 10px;
     margin-left: 5px;
     margin-right: 5px;
     padding: 5px;
@@ -120,23 +125,32 @@ body {
     font-weight: 700;
     border-radius: 10px;
     text-decoration: none;
-    color: rgb(33, 29, 61);
-    color: rgb(255, 255, 255, 0.6);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: rgb(0, 0, 0, 0.6);
+.btn-edit {
+    background-color: steelblue;
 }
 
-.btn:active {
-    background-color: rgb(0, 0, 0, 1);
+.btn-edit:hover {
+    background-color: rgb(41, 76, 107);
+}
+
+.btn-remove {
+    background-color: #e74c3c;
+}
+
+.btn-remove:hover {
+    background-color: #c0392b;
 }
 
 .inp-hora {
     font-size: 1.2em;
     color: black;
     padding-left: 5px;
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     width: 70px;
     border-radius: 6px;
 }
@@ -145,7 +159,7 @@ body {
     font-size: 1.2em;
     text-align: center;
     color: black;
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     width: 50px;
     border-radius: 6px;
 }
@@ -166,10 +180,11 @@ body {
     color: black;
     margin-left: 15px;
     padding: 5px;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 160px;
     border-radius: 6px;
 }
+
 .inp-disc {
     background-color: white;
 }
@@ -178,7 +193,7 @@ body {
     font-size: 1.2em;
     color: black;
     padding-left: 5px;
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 400px;
     border-radius: 6px;
 }
